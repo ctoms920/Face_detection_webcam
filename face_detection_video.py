@@ -1,10 +1,8 @@
 import cv2
 
-
 face_cascade = cv2.CascadeClassifier("C:\\Users\Cyril Tom Mathew\Desktop\haarcascade_frontalface_default.xml")
 eye_cascade = cv2.CascadeClassifier("C:\\Users\Cyril Tom Mathew\Desktop\haarcascade_eye.xml")
 camera = cv2.VideoCapture(0)
-
 
 while True:
     ret, frame = camera.read()
